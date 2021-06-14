@@ -1,48 +1,74 @@
 -------------------------------------------------------------------------------
 Test set: models.EndangeredAnimalsTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 12.308 sec <<< FAILURE! - in models.EndangeredAnimalsTest
-update_updatesAnimalDetails(models.EndangeredAnimalsTest)  Time elapsed: 1.566 sec  <<< ERROR!
-org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
-Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
+Tests run: 11, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.277 sec <<< FAILURE! - in models.EndangeredAnimalsTest
+update_updatesAnimalDetails(models.EndangeredAnimalsTest)  Time elapsed: 0.026 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: column "rangerid" of relation "animals" does not exist
+  Position: 27
+	at models.EndangeredAnimalsTest.update_updatesAnimalDetails(EndangeredAnimalsTest.java:74)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column "rangerid" of relation "animals" does not exist
+  Position: 27
+	at models.EndangeredAnimalsTest.update_updatesAnimalDetails(EndangeredAnimalsTest.java:74)
 
-endangered_instantiatesCorrectly_true(models.EndangeredAnimalsTest)  Time elapsed: 0.599 sec  <<< ERROR!
-org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
-Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
+removeById_removesAnimalById(models.EndangeredAnimalsTest)  Time elapsed: 0.016 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: column "rangerid" of relation "animals" does not exist
+  Position: 27
+	at models.EndangeredAnimalsTest.removeById_removesAnimalById(EndangeredAnimalsTest.java:88)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column "rangerid" of relation "animals" does not exist
+  Position: 27
+	at models.EndangeredAnimalsTest.removeById_removesAnimalById(EndangeredAnimalsTest.java:88)
 
-removeById_removesAnimalById(models.EndangeredAnimalsTest)  Time elapsed: 1.331 sec  <<< ERROR!
-org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
-Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
+removeAll_clearsAnimalDatabase(models.EndangeredAnimalsTest)  Time elapsed: 0.025 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: column "rangerid" of relation "animals" does not exist
+  Position: 27
+	at models.EndangeredAnimalsTest.removeAll_clearsAnimalDatabase(EndangeredAnimalsTest.java:97)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column "rangerid" of relation "animals" does not exist
+  Position: 27
+	at models.EndangeredAnimalsTest.removeAll_clearsAnimalDatabase(EndangeredAnimalsTest.java:97)
 
-removeAll_clearsAnimalDatabase(models.EndangeredAnimalsTest)  Time elapsed: 1.433 sec  <<< ERROR!
-org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
-Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
+save_savesAnimalToTheDatabase(models.EndangeredAnimalsTest)  Time elapsed: 0.072 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: column "rangerid" of relation "animals" does not exist
+  Position: 27
+	at models.EndangeredAnimalsTest.save_savesAnimalToTheDatabase(EndangeredAnimalsTest.java:40)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column "rangerid" of relation "animals" does not exist
+  Position: 27
+	at models.EndangeredAnimalsTest.save_savesAnimalToTheDatabase(EndangeredAnimalsTest.java:40)
 
-save_savesAnimalToTheDatabase(models.EndangeredAnimalsTest)  Time elapsed: 1.309 sec  <<< ERROR!
-org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
-Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
+getAll_returnsAllInstancesOfAnimal(models.EndangeredAnimalsTest)  Time elapsed: 0.047 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: column "rangerid" of relation "animals" does not exist
+  Position: 27
+	at models.EndangeredAnimalsTest.getAll_returnsAllInstancesOfAnimal(EndangeredAnimalsTest.java:55)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column "rangerid" of relation "animals" does not exist
+  Position: 27
+	at models.EndangeredAnimalsTest.getAll_returnsAllInstancesOfAnimal(EndangeredAnimalsTest.java:55)
 
-getAll_returnsAllInstancesOfAnimal(models.EndangeredAnimalsTest)  Time elapsed: 1.352 sec  <<< ERROR!
-org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
-Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
+save_assignsIdToAnimal(models.EndangeredAnimalsTest)  Time elapsed: 0.064 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: column "rangerid" of relation "animals" does not exist
+  Position: 27
+	at models.EndangeredAnimalsTest.save_assignsIdToAnimal(EndangeredAnimalsTest.java:47)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column "rangerid" of relation "animals" does not exist
+  Position: 27
+	at models.EndangeredAnimalsTest.save_assignsIdToAnimal(EndangeredAnimalsTest.java:47)
 
-save_assignsIdToAnimal(models.EndangeredAnimalsTest)  Time elapsed: 1.33 sec  <<< ERROR!
-org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
-Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
-
-endangered_instantiatesWithName_String(models.EndangeredAnimalsTest)  Time elapsed: 0.614 sec  <<< ERROR!
-org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
-Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
-
-find_returnsAnimalWithSameId_secondAnimal(models.EndangeredAnimalsTest)  Time elapsed: 1.33 sec  <<< ERROR!
-org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
-Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
-
-equals_returnsTrueIfNameAndRangerIdAreSame_true(models.EndangeredAnimalsTest)  Time elapsed: 0.716 sec  <<< ERROR!
-org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
-Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
-
-endangered_instantiatesWithRangerId_int(models.EndangeredAnimalsTest)  Time elapsed: 0.615 sec  <<< ERROR!
-org.sql2o.Sql2oException: Could not acquire a connection from DataSource - FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
-Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for host "41.84.152.6", user "ubehwyfjkxozzy", database "d8jlcrqdig8sdv", SSL off
+find_returnsAnimalWithSameId_secondAnimal(models.EndangeredAnimalsTest)  Time elapsed: 0.02 sec  <<< ERROR!
+org.sql2o.Sql2oException: 
+Error in executeUpdate, ERROR: column "rangerid" of relation "animals" does not exist
+  Position: 27
+	at models.EndangeredAnimalsTest.find_returnsAnimalWithSameId_secondAnimal(EndangeredAnimalsTest.java:65)
+Caused by: org.postgresql.util.PSQLException: 
+ERROR: column "rangerid" of relation "animals" does not exist
+  Position: 27
+	at models.EndangeredAnimalsTest.find_returnsAnimalWithSameId_secondAnimal(EndangeredAnimalsTest.java:65)
 
