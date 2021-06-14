@@ -105,17 +105,17 @@ import java.util.Map;
             return null;
         },new HandlebarsTemplateEngine());
 
-//
-//        get("/sight/:id/update",(request, response) ->
-//        {
-//            Map<String, Object>model=new HashMap<String, Object>();
-//            int idToUpdate=Integer.parseInt(request.params(":id"));
-//            Sightings editSight=Sightings.findById(idToUpdate);
-//            model.put("editSight", editSight);
-//            return new ModelAndView(model, "update-sight.hbs");
-//        },new HandlebarsTemplateEngine());
-//        post("/sight/:id/update", (request, response) ->
-//        {
+
+        get("/sight/:id/update",(request, response) ->
+        {
+            Map<String, Object>model=new HashMap<String, Object>();
+            int idToUpdate=Integer.parseInt(request.params(":id"));
+            Sightings editSight=Sightings.findById(idToUpdate);
+            model.put("editSight", editSight);
+            return new ModelAndView(model, "update-sight.hbs");
+        },new HandlebarsTemplateEngine());
+        post("/sight/:id/update", (request, response) ->
+        {
 //            Map<String, Object>model=new HashMap<String, Object>();
 //            int animalId=Integer.parseInt(request.queryParams("animalId"));
 //            String location=request.queryParams("location");
