@@ -136,15 +136,15 @@ import java.util.Map;
             return null;
         }, new HandlebarsTemplateEngine());
 
-//        get("/sight/:id/remove", (request, response) ->
-//        {
-//            Map<String, Object>model = new HashMap<String, Object>();
-//            int idToRemove=Integer.parseInt(request.params("id"));
-//            Sightings remove =Sightings.findById(idToRemove);
-//            remove.removeById();
-//            response.redirect("/sight");
-//            return null;
-//        }, new HandlebarsTemplateEngine());
-//
-//    }
-//}
+        get("/sight/:id/remove", (request, response) ->
+        {
+            Map<String, Object>model = new HashMap<String, Object>();
+            int idToRemove=Integer.parseInt(request.params("id"));
+            Sightings remove =Sightings.findById(idToRemove);
+            remove.removeById();
+            response.redirect("/sight");
+            return null;
+        }, new HandlebarsTemplateEngine());
+
+    }
+}
