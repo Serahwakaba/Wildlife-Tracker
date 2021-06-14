@@ -128,14 +128,14 @@ import java.util.Map;
         },new HandlebarsTemplateEngine());
         get("/animals/:id/remove", (request, response) ->
         {
-//            Map<String, Object>model = new HashMap<String, Object>();
-//            int idToRemove=Integer.parseInt(request.params("id"));
-//            EndangeredAnimals remove =EndangeredAnimals.findById(idToRemove);
-//            remove.removeById();
-//            response.redirect("/");
-//            return null;
-//        }, new HandlebarsTemplateEngine());
-//
+            Map<String, Object>model = new HashMap<String, Object>();
+            int idToRemove=Integer.parseInt(request.params("id"));
+            EndangeredAnimals remove =EndangeredAnimals.findById(idToRemove);
+            remove.removeById();
+            response.redirect("/");
+            return null;
+        }, new HandlebarsTemplateEngine());
+
 //        get("/sight/:id/remove", (request, response) ->
 //        {
 //            Map<String, Object>model = new HashMap<String, Object>();
