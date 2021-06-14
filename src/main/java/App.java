@@ -34,19 +34,19 @@ import java.util.Map;
             Map<String, Object>model= new HashMap<String, Object>();
             return new ModelAndView(model,"register_animals_form.hbs");
         }, new HandlebarsTemplateEngine());
-//
-//        post("/animals/new", (request, response) ->
-//        {
-//            Map<String, Object> model = new HashMap<String, Object>();
-//            String name = request.queryParams("name");
-//            int rangerId = Integer.parseInt(request.queryParams("rangerId"));
-//            String age =request.queryParams("age");
-//            String health=request.queryParams("health");
-//            EndangeredAnimals endangeredAnimals= new EndangeredAnimals(name,rangerId,age,health);
-//            endangeredAnimals.save();
-//            response.redirect("/");
-//            return null;
-//        },new HandlebarsTemplateEngine());
+
+        post("/animals/new", (request, response) ->
+        {
+            Map<String, Object> model = new HashMap<String, Object>();
+            String name = request.queryParams("name");
+            int rangerId = Integer.parseInt(request.queryParams("rangerId"));
+            String age =request.queryParams("age");
+            String health=request.queryParams("health");
+            EndangeredAnimals endangeredAnimals= new EndangeredAnimals(name,rangerId,age,health);
+            endangeredAnimals.save();
+            response.redirect("/");
+            return null;
+        },new HandlebarsTemplateEngine());
 //        get("/animals/:id/update", (request, response) ->
 //        {
 //            Map<String, Object>model=new HashMap<String, Object>();
