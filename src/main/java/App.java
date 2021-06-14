@@ -47,15 +47,15 @@ import java.util.Map;
             response.redirect("/");
             return null;
         },new HandlebarsTemplateEngine());
-//        get("/animals/:id/update", (request, response) ->
-//        {
-//            Map<String, Object>model=new HashMap<String, Object>();
-//            int idToUpdate=Integer.parseInt(request.params(":id"));
-//            EndangeredAnimals editAnimal=EndangeredAnimals.findById(idToUpdate);
-//            model.put("editAnimal", editAnimal);
-//            return new ModelAndView(model, "endangered_animal_form.hbs");
-//        }, new HandlebarsTemplateEngine());
-//
+        get("/animals/:id/update", (request, response) ->
+        {
+            Map<String, Object>model=new HashMap<String, Object>();
+            int idToUpdate=Integer.parseInt(request.params(":id"));
+            EndangeredAnimals editAnimal=EndangeredAnimals.findById(idToUpdate);
+            model.put("editAnimal", editAnimal);
+            return new ModelAndView(model, "endangered_animal_form.hbs");
+        }, new HandlebarsTemplateEngine());
+
 //        post("/animal/:id/update", (request, response) ->
 //        {
 //            Map<String , Object>model=new HashMap<String, Object>();
