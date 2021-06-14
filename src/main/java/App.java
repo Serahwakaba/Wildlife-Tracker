@@ -30,10 +30,10 @@ import java.util.Map;
        }, new HandlebarsTemplateEngine());
 
        get("/animals/new", (request, response) ->
-//        {
-//            Map<String, Object>model= new HashMap<String, Object>();
-//            return new ModelAndView(model,"register_animals_form.hbs");
-//        }, new HandlebarsTemplateEngine());
+        {
+            Map<String, Object>model= new HashMap<String, Object>();
+            return new ModelAndView(model,"register_animals_form.hbs");
+        }, new HandlebarsTemplateEngine());
 //
 //        post("/animals/new", (request, response) ->
 //        {
