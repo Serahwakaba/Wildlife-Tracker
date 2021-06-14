@@ -74,15 +74,15 @@ import java.util.Map;
             return null;
         },new HandlebarsTemplateEngine());
 
-//
-//        get("/sight", (request, response) ->
-//        {
-//            Map<String , Object>model=new HashMap<String, Object>();
-//            List<Sightings>sights=Sightings.getAll();
-//            model.put("sights",sights);
-//            return new ModelAndView(model,"sight.hbs");
-//        },new HandlebarsTemplateEngine());
-//
+
+        get("/sight", (request, response) ->
+        {
+            Map<String , Object>model=new HashMap<String, Object>();
+            List<Sightings>sights=Sightings.getAll();
+            model.put("sights",sights);
+            return new ModelAndView(model,"sight.hbs");
+        },new HandlebarsTemplateEngine());
+
 //        get("/sight/new", (request, response) ->
 //        {
 //            Map<String, Object>model= new HashMap<String, Object>();
