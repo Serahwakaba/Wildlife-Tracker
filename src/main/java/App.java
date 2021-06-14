@@ -116,18 +116,18 @@ import java.util.Map;
         },new HandlebarsTemplateEngine());
         post("/sight/:id/update", (request, response) ->
         {
-//            Map<String, Object>model=new HashMap<String, Object>();
-//            int animalId=Integer.parseInt(request.queryParams("animalId"));
-//            String location=request.queryParams("location");
-//            String rangerName = request.queryParams("rangerName");
-//            int idToUpdate = Integer.parseInt(request.params(":id"));
-//            Sightings updateSight=Sightings.findById(idToUpdate);
-//            updateSight.update(animalId,location,rangerName);
-//            response.redirect("/sight");
-//            return null;
-//        },new HandlebarsTemplateEngine());
-//        get("/animals/:id/remove", (request, response) ->
-//        {
+            Map<String, Object>model=new HashMap<String, Object>();
+            int animalId=Integer.parseInt(request.queryParams("animalId"));
+            String location=request.queryParams("location");
+            String rangerName = request.queryParams("rangerName");
+            int idToUpdate = Integer.parseInt(request.params(":id"));
+            Sightings updateSight=Sightings.findById(idToUpdate);
+            updateSight.update(animalId,location,rangerName);
+            response.redirect("/sight");
+            return null;
+        },new HandlebarsTemplateEngine());
+        get("/animals/:id/remove", (request, response) ->
+        {
 //            Map<String, Object>model = new HashMap<String, Object>();
 //            int idToRemove=Integer.parseInt(request.params("id"));
 //            EndangeredAnimals remove =EndangeredAnimals.findById(idToRemove);
