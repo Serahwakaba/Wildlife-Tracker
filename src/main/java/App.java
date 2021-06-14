@@ -29,7 +29,7 @@ import java.util.Map;
                return new ModelAndView(model, "index.hbs");
        }, new HandlebarsTemplateEngine());
 
-//        get("/animals/new", (request, response) ->
+       get("/animals/new", (request, response) ->
 //        {
 //            Map<String, Object>model= new HashMap<String, Object>();
 //            return new ModelAndView(model,"register_animals_form.hbs");
