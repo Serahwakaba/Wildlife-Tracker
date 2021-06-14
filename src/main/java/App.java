@@ -83,14 +83,14 @@ import java.util.Map;
             return new ModelAndView(model,"sight.hbs");
         },new HandlebarsTemplateEngine());
 
-//        get("/sight/new", (request, response) ->
-//        {
-//            Map<String, Object>model= new HashMap<String, Object>();
-//            List<EndangeredAnimals>animals=EndangeredAnimals.getAll();
-//            model.put("animals",animals);
-//            return new ModelAndView(model,"newSight.hbs");
-//        }, new HandlebarsTemplateEngine());
-//
+        get("/sight/new", (request, response) ->
+        {
+            Map<String, Object>model= new HashMap<String, Object>();
+            List<EndangeredAnimals>animals=EndangeredAnimals.getAll();
+            model.put("animals",animals);
+            return new ModelAndView(model,"newSight.hbs");
+        }, new HandlebarsTemplateEngine());
+
 //        post("/sight/new", (request, response) ->
 //        {
 //            Map<String, Object>model=new HashMap<String, Object>();
