@@ -2,7 +2,8 @@
 The Forest Service is considering a proposal from a timber company to clearcut a nearby forest of Douglas Fir. Before this proposal may be approved, they must complete an environmental impact study. You have been asked to build an application that allows Rangers to track wildlife sightings in the area.
 ## Author
 Serah Wakaba
-**Specifications**
+
+#Specifications
 1. Due to their dwindling numbers, Rangers must record additional information about Endangered Animals
 2. Each time an animal species of either category is seen, a Sighting must be reported.
 3. When wildlife is spotted, a Ranger submits a form to record a Sighting containing the following:id of Animal or EndangeredAnimal species
@@ -18,7 +19,7 @@ location (Conveyed in any manner you choose ie: "Zone A", "Near the River", "NE 
 **Set Up and Installation**
 1. Download the project folders
 > ```
->$ git clone https://github.com/Serahwakaba/wildlifetracker.git
+>$ git clone https://github.com/Serahwakaba/Wildlife-Tracker.git
 >$ cd WildlifeTracker
 >```
 2. Change postgres db login details in:
