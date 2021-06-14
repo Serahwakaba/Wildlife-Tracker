@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: models.EndangeredAnimalsTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.277 sec <<< FAILURE! - in models.EndangeredAnimalsTest
-update_updatesAnimalDetails(models.EndangeredAnimalsTest)  Time elapsed: 0.026 sec  <<< ERROR!
+Tests run: 11, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.364 sec <<< FAILURE! - in models.EndangeredAnimalsTest
+update_updatesAnimalDetails(models.EndangeredAnimalsTest)  Time elapsed: 0.039 sec  <<< ERROR!
 org.sql2o.Sql2oException: 
 Error in executeUpdate, ERROR: column "rangerid" of relation "animals" does not exist
   Position: 27
@@ -12,7 +12,7 @@ ERROR: column "rangerid" of relation "animals" does not exist
   Position: 27
 	at models.EndangeredAnimalsTest.update_updatesAnimalDetails(EndangeredAnimalsTest.java:74)
 
-removeById_removesAnimalById(models.EndangeredAnimalsTest)  Time elapsed: 0.016 sec  <<< ERROR!
+removeById_removesAnimalById(models.EndangeredAnimalsTest)  Time elapsed: 0.042 sec  <<< ERROR!
 org.sql2o.Sql2oException: 
 Error in executeUpdate, ERROR: column "rangerid" of relation "animals" does not exist
   Position: 27
@@ -22,7 +22,7 @@ ERROR: column "rangerid" of relation "animals" does not exist
   Position: 27
 	at models.EndangeredAnimalsTest.removeById_removesAnimalById(EndangeredAnimalsTest.java:88)
 
-removeAll_clearsAnimalDatabase(models.EndangeredAnimalsTest)  Time elapsed: 0.025 sec  <<< ERROR!
+removeAll_clearsAnimalDatabase(models.EndangeredAnimalsTest)  Time elapsed: 0.033 sec  <<< ERROR!
 org.sql2o.Sql2oException: 
 Error in executeUpdate, ERROR: column "rangerid" of relation "animals" does not exist
   Position: 27
@@ -32,7 +32,7 @@ ERROR: column "rangerid" of relation "animals" does not exist
   Position: 27
 	at models.EndangeredAnimalsTest.removeAll_clearsAnimalDatabase(EndangeredAnimalsTest.java:97)
 
-save_savesAnimalToTheDatabase(models.EndangeredAnimalsTest)  Time elapsed: 0.072 sec  <<< ERROR!
+save_savesAnimalToTheDatabase(models.EndangeredAnimalsTest)  Time elapsed: 0.03 sec  <<< ERROR!
 org.sql2o.Sql2oException: 
 Error in executeUpdate, ERROR: column "rangerid" of relation "animals" does not exist
   Position: 27
@@ -42,7 +42,7 @@ ERROR: column "rangerid" of relation "animals" does not exist
   Position: 27
 	at models.EndangeredAnimalsTest.save_savesAnimalToTheDatabase(EndangeredAnimalsTest.java:40)
 
-getAll_returnsAllInstancesOfAnimal(models.EndangeredAnimalsTest)  Time elapsed: 0.047 sec  <<< ERROR!
+getAll_returnsAllInstancesOfAnimal(models.EndangeredAnimalsTest)  Time elapsed: 0.106 sec  <<< ERROR!
 org.sql2o.Sql2oException: 
 Error in executeUpdate, ERROR: column "rangerid" of relation "animals" does not exist
   Position: 27
@@ -52,7 +52,7 @@ ERROR: column "rangerid" of relation "animals" does not exist
   Position: 27
 	at models.EndangeredAnimalsTest.getAll_returnsAllInstancesOfAnimal(EndangeredAnimalsTest.java:55)
 
-save_assignsIdToAnimal(models.EndangeredAnimalsTest)  Time elapsed: 0.064 sec  <<< ERROR!
+save_assignsIdToAnimal(models.EndangeredAnimalsTest)  Time elapsed: 0.029 sec  <<< ERROR!
 org.sql2o.Sql2oException: 
 Error in executeUpdate, ERROR: column "rangerid" of relation "animals" does not exist
   Position: 27
@@ -62,7 +62,7 @@ ERROR: column "rangerid" of relation "animals" does not exist
   Position: 27
 	at models.EndangeredAnimalsTest.save_assignsIdToAnimal(EndangeredAnimalsTest.java:47)
 
-find_returnsAnimalWithSameId_secondAnimal(models.EndangeredAnimalsTest)  Time elapsed: 0.02 sec  <<< ERROR!
+find_returnsAnimalWithSameId_secondAnimal(models.EndangeredAnimalsTest)  Time elapsed: 0.035 sec  <<< ERROR!
 org.sql2o.Sql2oException: 
 Error in executeUpdate, ERROR: column "rangerid" of relation "animals" does not exist
   Position: 27
