@@ -1,13 +1,13 @@
-//import models.EndangeredAnimals;
-//import models.Sightings;
-//import spark.ModelAndView;
-//import spark.template.handlebars.HandlebarsTemplateEngine;
-//
-//import java.util.ArrayList;
-//import java.util.HashMap;
-//import java.util.List;
-//import java.util.Map;
-//
+import models.EndangeredAnimals;
+import models.Sightings;
+import spark.ModelAndView;
+import spark.template.handlebars.HandlebarsTemplateEngine;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 //import static spark.Spark.*;
 //public class App {static int getHerokuAssignedPort() {
 //    ProcessBuilder processBuilder = new ProcessBuilder();
@@ -21,14 +21,14 @@
 //        staticFileLocation("/public");
 //
 //
-//        get("/",(request, response) ->
+        get("/",(request, response) ->
    {
-//                Map<String, Object>model=new HashMap<String, Object>();
-//                List<EndangeredAnimals> endangeredAnimals=EndangeredAnimals.getAll();
-//                model.put("endangeredAnimals", endangeredAnimals);
-//                return new ModelAndView(model, "index.hbs");
-//        }, new HandlebarsTemplateEngine());
-//
+               Map<String, Object>model=new HashMap<String, Object>();
+              List<EndangeredAnimals> endangeredAnimals=EndangeredAnimals.getAll();
+               model.put("endangeredAnimals", endangeredAnimals);
+               return new ModelAndView(model, "index.hbs");
+       }, new HandlebarsTemplateEngine());
+
 //        get("/animals/new", (request, response) ->
 //        {
 //            Map<String, Object>model= new HashMap<String, Object>();
