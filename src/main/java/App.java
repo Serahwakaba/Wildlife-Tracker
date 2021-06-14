@@ -56,24 +56,24 @@ import java.util.Map;
             return new ModelAndView(model, "endangered_animal_form.hbs");
         }, new HandlebarsTemplateEngine());
 
-//        post("/animal/:id/update", (request, response) ->
-//        {
-//            Map<String , Object>model=new HashMap<String, Object>();
-//
-//            String name=request.queryParams("name");
-//            int rangerId=Integer.parseInt(request.queryParams("rangerId"));
-//            String age = request.queryParams("age");
-//            String health = request.queryParams("health");
-//
-//            int idToUpdate = Integer.parseInt(request.params(":id"));
-//
-//            EndangeredAnimals updateAnimal=EndangeredAnimals.findById(idToUpdate);
-//            updateAnimal.update(name,rangerId,age,health);
-//
-//            response.redirect("/");
-//            return null;
-//        },new HandlebarsTemplateEngine());
-//
+        post("/animal/:id/update", (request, response) ->
+        {
+            Map<String , Object>model=new HashMap<String, Object>();
+
+            String name=request.queryParams("name");
+            int rangerId=Integer.parseInt(request.queryParams("rangerId"));
+            String age = request.queryParams("age");
+            String health = request.queryParams("health");
+
+            int idToUpdate = Integer.parseInt(request.params(":id"));
+
+            EndangeredAnimals updateAnimal=EndangeredAnimals.findById(idToUpdate);
+            updateAnimal.update(name,rangerId,age,health);
+
+            response.redirect("/");
+            return null;
+        },new HandlebarsTemplateEngine());
+
 //
 //        get("/sight", (request, response) ->
 //        {
