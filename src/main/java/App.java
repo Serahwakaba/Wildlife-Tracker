@@ -91,20 +91,20 @@ import java.util.Map;
             return new ModelAndView(model,"newSight.hbs");
         }, new HandlebarsTemplateEngine());
 
-//        post("/sight/new", (request, response) ->
-//        {
-//            Map<String, Object>model=new HashMap<String, Object>();
-//
-//            int animalId=Integer.parseInt(request.queryParams("animalId"));
-//            String location=request.queryParams("location");
-//            String rangerName = request.queryParams("rangerName");
-//
-//            Sightings newSight=new Sightings(animalId,location,rangerName);
-//            newSight.saveSight();
-//            response.redirect("/sight");
-//            return null;
-//        },new HandlebarsTemplateEngine());
-//
+        post("/sight/new", (request, response) ->
+        {
+            Map<String, Object>model=new HashMap<String, Object>();
+
+            int animalId=Integer.parseInt(request.queryParams("animalId"));
+            String location=request.queryParams("location");
+            String rangerName = request.queryParams("rangerName");
+
+            Sightings newSight=new Sightings(animalId,location,rangerName);
+            newSight.saveSight();
+            response.redirect("/sight");
+            return null;
+        },new HandlebarsTemplateEngine());
+
 //
 //        get("/sight/:id/update",(request, response) ->
 //        {
