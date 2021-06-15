@@ -27,10 +27,16 @@ location (Conveyed in any manner you choose ie: "Zone A", "Near the River", "NE 
 > src/main/java/DB.java 
 >```
 3. Database instructions for PSQL
-In PSQL:
+4.in psql/
+CREATE DATABASE wildlife_tracker;
 
-* CREATE TABLE animals(id SERIAL PRIMARY KEY, health varchar, age varchar, type varchar,name varchar);
-* CREATE TABLE sightings(id SERIAL PRIMARY KEY, ranger varchar , location varchar, animalid int);
+    \c wildlife_tracker;
+
+    CREATE TABLE animals (id serial PRIMARY KEY, name VARCHAR, rangerid int,age VARCHAR, health VARCHAR);
+
+    CREATE TABLE sightings (id serial PRIMARY KEY, animalId int, location VARCHAR, rangerName VARCHAR);
+
+    CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;
 
 4. Launch
 > ```
