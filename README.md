@@ -15,6 +15,7 @@ location (Conveyed in any manner you choose ie: "Zone A", "Near the River", "NE 
 2. Spark Java Web Framework
 3. PostgreSQL for Database
 4. Velocity Template Engine 
+5. git
 
 **Set Up and Installation**
 1. Download the project folders
@@ -24,7 +25,7 @@ location (Conveyed in any manner you choose ie: "Zone A", "Near the River", "NE 
 >```
 2. Change postgres db login details in:
 > ```
-> src/main/java/DB.java 
+> src/main/java/Database.java 
 >```
 3. Database instructions for PSQL
 4.in psql/
