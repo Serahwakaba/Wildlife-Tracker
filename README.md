@@ -27,8 +27,26 @@ location (Conveyed in any manner you choose ie: "Zone A", "Near the River", "NE 
 > ```
 > src/main/java/Database.java 
 >```
-3. Database instructions for PSQL
-4.in psql/
+
+3. Database Setup
+
+Click this link to install postgreSQL if you don't have one.
+
+for ubuntu users use the following in the terminal:
+
+    sudo apt-get update
+
+    sudo apt-get install postgresql postgresql-contrib libpq-dev
+
+launch the postgreSQl using:
+
+    sudo -u postgres psql -U postgres
+
+update server password
+
+    ALTER USER postgres WITH PASSWORD '12345';
+
+##creating database
 CREATE DATABASE wildlife_tracker;
 
     \c wildlife_tracker;
